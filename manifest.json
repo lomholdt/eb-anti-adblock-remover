@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "EB Anti Block",
+  "version": "1.0",
+  "description": "Removes Anti Adblock notice on EB.dk",
+  "content_scripts": [
+    {
+      "matches": ["http://ekstrabladet.dk/*"],
+      "js": ["eb.js"]
+    }
+  ],
+  "permissions": ["http://*.ekstrabladet.dk/*", "https://*.ekstrabladet.dk/*", "http://ekstrabladet.dk/*"],
+  "browser_action": {
+    "default_title": "EB Anti Block"
+  }
+}
